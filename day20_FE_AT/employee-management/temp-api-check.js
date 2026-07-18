@@ -1,0 +1,1 @@
+const axios = require('axios');\naxios.get('https://6a4b3727f5eab0bb6b625c1f.mockapi.io/EMPLOYEE')\n  .then(res => { console.log(JSON.stringify(res.data.slice(0,3), null, 2)); })\n  .catch(err => { console.error(err.message); process.exit(1); });\n
